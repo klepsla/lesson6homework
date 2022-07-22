@@ -50,11 +50,14 @@ public class Main {
         //Задание № 3
 
         for (int i = weight.length; i > 0; i--) {
-            System.out.print(weight[2] + ", ");{
+            System.out.print(weight[2] + ", ");
+            {
             }
-            System.out.print(weight[1] + ", ");{
-        }
-            System.out.print(weight[0]);{
+            System.out.print(weight[1] + ", ");
+            {
+            }
+            System.out.print(weight[0]);
+            {
             }
             break;
         }
@@ -62,51 +65,41 @@ public class Main {
 
 
         for (int i = arr.length; i > 0; i--) {
-            System.out.print(arr[2] + ", ");{
+            System.out.print(arr[2] + ", ");
+            {
             }
-            System.out.print(arr[1] + ", ");{
+            System.out.print(arr[1] + ", ");
+            {
             }
-            System.out.print(arr[0]);{
+            System.out.print(arr[0]);
+            {
             }
             break;
         }
+
         System.out.println();
 
 
-        for (int i = year.length; i > 0; i--) {
-            System.out.print(year[7] + ", ");{
-            }
-            System.out.print(year[6] + ", ");{
-            }
-            System.out.print(year[5] + ", ");{
-            }
-            System.out.print(year[4] + ", ");{
-            }
-            System.out.print(year[3] + ", ");{
-            }
-            System.out.print(year[2] + ", ");{
-            }
-            System.out.print(year[1] + ", ");{
-            }
-            System.out.print(year[0]);{
-            }
-            break;
+        for (int i = year.length-1; i >= 0; --i) {
+
+        System.out.print(year[i] + ", ");
+        break;
         }
+
         System.out.println();
 
 
         //Задание № 4
 
+        for (int i = 0; i < weight.length; i++) {
 
-
-
-
-
-
-
-
-
-
+            if ((weight[i] % 2) != 0) {
+                System.out.print(weight[i] + 1);
+            } else System.out.print(weight[i]);
+            if ( i != weight.length - 1){
+                System.out.print(", " );
+            }
+        }
 
 
 
