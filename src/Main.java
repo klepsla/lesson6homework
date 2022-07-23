@@ -33,8 +33,7 @@ public class Main {
                 System.out.print(arr[i] + ", ");
             }
         }
-
-        System.out.print("\n");
+                System.out.print("\n");
 
 
         for (int i = 0; i < year.length; i++) {
@@ -44,49 +43,45 @@ public class Main {
                 System.out.print(year[i] + ", ");
             }
         }
-        System.out.print("\n");
+
+                System.out.print("\n");
 
 
         //Задание № 3
 
-        for (int i = weight.length; i > 0; i--) {
-            System.out.print(weight[2] + ", ");
-            {
+        for (int i = weight.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(weight[i] + ", ");
+            } else {
+                System.out.print(weight[i]);
             }
-            System.out.print(weight[1] + ", ");
-            {
-            }
-            System.out.print(weight[0]);
-            {
-            }
-            break;
-        }
-        System.out.println();
-
-
-        for (int i = arr.length; i > 0; i--) {
-            System.out.print(arr[2] + ", ");
-            {
-            }
-            System.out.print(arr[1] + ", ");
-            {
-            }
-            System.out.print(arr[0]);
-            {
-            }
-            break;
         }
 
         System.out.println();
 
 
-        for (int i = year.length-1; i >= 0; --i) {
-
-        System.out.print(year[i] + ", ");
-        break;
+        for (int i = arr.length - 1; i >= 0; i--) {
+                if (i != 0) {
+                System.out.print(arr[i] + ", ");
+                } else {
+                System.out.print(arr[i]);
+            }
         }
 
         System.out.println();
+
+
+            for (int i = year.length - 1; i >= 0; i--) {
+                if (i != 0) {
+                    System.out.print(year[i] + ", ");
+                } else {
+                    System.out.print(year[i]);
+                }
+            }
+
+
+        System.out.println();
+
 
 
         //Задание № 4
@@ -95,7 +90,8 @@ public class Main {
 
             if ((weight[i] % 2) != 0) {
                 System.out.print(weight[i] + 1);
-            } else System.out.print(weight[i]);
+            } else
+                System.out.print(weight[i]);
             if ( i != weight.length - 1){
                 System.out.print(", " );
             }
